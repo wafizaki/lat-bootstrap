@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Centered Box</title>
+  </head>
+  <body>
+    <div class="container text-center mt-5 w-50 fw-bold">
+      <div class="row justify-content-center">
+        <div class="col-md-auto my-3">
+          <!-- Content of the centered box goes here -->
+          <h1>Login</h1>
+          <p>Silahkan masukkan alamat email dan kata sandi yang sesuai!</p>
+          <div class="my-4">
+            <h6 class="float-start">Alamat Email</h6>
+            <form name="login" method="post" onsubmit="return validateForm()">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control input-lg bg-dark-subtle"
+                placeholder="Alamat Email"
+                minlength="3"
+                maxlength="40"
+              />
+              <div class="my-5"></div>
+              <h6 class="float-start">Kata Sandi</h6>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control input-lg bg-dark-subtle"
+                placeholder="Password"
+                minlength="3"
+                maxlength="40"
+              />
+              <button type="submit" class="btn btn-outline-dark mt-5" href="#">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
